@@ -1,8 +1,13 @@
 export default [
   'strapi::logger',
   'strapi::errors',
-  'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: false, // Disable if it's interfering with images
+    },
+  },
+  'strapi::cors',     
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',

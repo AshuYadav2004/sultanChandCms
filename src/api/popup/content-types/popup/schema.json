@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popups",
+  "info": {
+    "singularName": "popup",
+    "pluralName": "popups",
+    "displayName": "popup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "popuBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
